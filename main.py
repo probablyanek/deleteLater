@@ -6,14 +6,6 @@ from datetime import datetime, timedelta
 import plotly.graph_objs as go
 from KNN.predict import danger
 
-# Mocking the predict.danger function (replace this with your actual implementation)
-def predict_danger(nosPreg, glucose, bp, bmi, age):
-    # Simple example: If glucose is higher than 180, it's considered dangerous
-    if glucose > 180:
-        return "Danger: High glucose level!"
-    else:
-        return "Glucose level is normal."
-
 # Function to send a reminder
 def send_reminder():
     st.write("Reminder: Time to check your sugar level!")
