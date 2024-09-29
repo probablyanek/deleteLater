@@ -65,7 +65,7 @@ nosPreg = st.sidebar.number_input("Enter number of times pregnant:", min_value=0
 bp = st.sidebar.number_input("Enter blood pressure:", min_value=0, max_value=300, value=120, step=1)
 bmi = st.sidebar.number_input("Enter BMI:", min_value=0.0, max_value=100.0, value=25.0, step=0.1)
 age = st.sidebar.number_input("Enter age:", min_value=0, value=30, step=1)
-email = st.sidebar.text_input("Enter emergency contact email:", value="me@anek.lol")
+email = st.sidebar.text_input("Enter emergency contact email:", value="ahiresharanya@gmail.com")
 # Prompt user for reminder interval in seconds
 interval = st.sidebar.number_input("Enter reminder interval (in seconds)", min_value=1, value=30, step=1)
 

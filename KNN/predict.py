@@ -19,11 +19,11 @@ def email(to, body):
 
 knn_loaded = joblib.load('knn_model.pkl')
 
-def danger(nosPreg, glucose, bp, bmi, age, email):
+def danger(nosPreg, glucose, bp, bmi, age, emailxx):
     # Make predictions using the loaded model
     sample_data = np.array([[int(nosPreg), int(glucose), int(bp), int(bmi), int(age)]])  # Replace with actual input data
     prediction = knn_loaded.predict(sample_data)
     if prediction[0] == 1:
-        email(f"{email}", f"Patient is critical. Blood glucose level: {glucose}mg/dL ")
+        email(f"{emailxx}", f"Patient is critical. Blood glucose level: {glucose}mg/dL ")
     return prediction[0]
 
